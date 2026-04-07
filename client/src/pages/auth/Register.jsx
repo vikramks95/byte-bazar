@@ -49,7 +49,7 @@ const Register = () => {
             </div>
           </div>
           <h1 className="text-2xl font-bold text-gray-800 font-display">Create Account</h1>
-          <p className="text-gray-500 mt-1">Join BazaarHub today</p>
+          <p className="text-gray-500 mt-1">Join BazaarHub Today</p>
         </div>
 
         {/* Role Toggle */}
@@ -63,7 +63,7 @@ const Register = () => {
                 form.role === r ? 'bg-white text-sky-600 shadow-sm' : 'text-gray-500'
               }`}
             >
-              {r === 'buyer' ? '🛒 I want to Buy' : '🏪 I want to Sell'}
+              {r === 'buyer' ? ' I want to Buy' : ' I want to Sell'}
             </button>
           ))}
         </div>
@@ -74,7 +74,7 @@ const Register = () => {
             <div className="relative">
               <FiUser className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
               <input type="text" name="name" value={form.name} onChange={handleChange} required
-                placeholder="John Doe"
+                placeholder="Enter Your Name"
                 className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-400 transition" />
             </div>
           </div>
@@ -90,7 +90,7 @@ const Register = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1.5">Phone (Optional)</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1.5">Phone</label>
             <div className="relative">
               <FiPhone className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
               <input type="tel" name="phone" value={form.phone} onChange={handleChange}
