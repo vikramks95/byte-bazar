@@ -9,11 +9,14 @@ const upload = require('../middleware/uploadMiddleware');
 
 // Public routes
 router.get('/', getProducts);
+
+router.get('/seller/my-products', protect, isSeller, getMyProducts);
+
 router.get('/:id', getProductById);
 
 // Seller routes
 router.post('/', protect, isSeller, upload.single('image'), createProduct);
-router.get('/seller/my-products', protect, isSeller, getMyProducts);
+
 router.put('/:id', protect, isSeller, upload.single('image'), updateProduct);
 router.delete('/:id', protect, isSeller, deleteProduct);
 
