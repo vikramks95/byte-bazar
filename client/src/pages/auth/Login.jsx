@@ -97,11 +97,7 @@ const Login = () => {
         </p>
 
         {/* Demo Credentials */}
-        <div className="mt-5 p-3 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-700">
-          <p className="font-semibold mb-1">Demo Accounts:</p>
-          <p>Admin: admin@bazaar.com / admin123</p>
-          <p>Seller: seller@bazaar.com / seller123</p>
-          <p>Buyer: buyer@bazaar.com / buyer123</p>
+        <div className="mt-5 p-3 bg-amber-50 border border-amber-200 rounded-xl text-xs text-amber-700">          
         </div>
       </div>
     </div>

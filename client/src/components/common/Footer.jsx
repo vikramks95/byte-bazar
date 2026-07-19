@@ -25,7 +25,6 @@ const Footer = () => (
         <div className="space-y-2 text-sm">
           <p className="flex items-center gap-2"><FiMail className="text-sky-400" /> support@bazaarhub.com</p>
           <p className="flex items-center gap-2"><FiPhone className="text-sky-400" /> +91 9876543210</p>
-          <p className="flex items-center gap-2"><FiPhone className="text-sky-400" /> +91 9525882126</p>
         </div>
       </div>
     </div>
